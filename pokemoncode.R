@@ -52,7 +52,6 @@ as.data.frame(Final_Data)->Final_Data
 #FINDING ERROR AND SUBSEQUENTLY RMS ERROR
 Final_Data$Actual-Final_Data$Predicted->Error
 cbind(Final_Data,Error)->Final_Data
-sqrt(mean(Final_Data$Error))
 sqrt(mean(Final_Data$Error^2))
 
 -----------------------------------
