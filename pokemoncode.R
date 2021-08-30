@@ -77,7 +77,7 @@ rpart(Legendary~.,data = train2)->mod3
 predict(mod3,newdata = test2,type = "class")->result3
 
 table(test2$Legendary,result3)
-#THESE VALUES ARE TENTATIVE AND ARE SUBJECT TO CHANGE WITH EACH RUN,HOWEVER THE CHANGE IS VERY LESS, THE REND REMAINS THE SAME
+#THESE VALUES ARE TENTATIVE AND ARE SUBJECT TO CHANGE WITH EACH RUN,HOWEVER THE CHANGE IS VERY LESS, THE TREND REMAINS THE SAME
 (109+5)/(109+5+5+1)->accuracy3
 
 sample.split(pokemon$Legendary,SplitRatio = 0.55)->split_tag4
@@ -86,7 +86,7 @@ subset(pokemon,split_tag4==F)->test3
 rpart(Legendary~.,data = train3)->mod_4
 predict(mod_4,newdata = test3,type = "class")->result4
 table(test3$Legendary,result4)
-#THESE VALUES ARE TENTATIVE AND ARE SUBJECT TO CHANGE WITH EACH RUN,HOWEVER THE CHANGE IS VERY LESS, THE REND REMAINS THE SAME
+#THESE VALUES ARE TENTATIVE AND ARE SUBJECT TO CHANGE WITH EACH RUN,HOWEVER THE CHANGE IS VERY LESS, THE TREND REMAINS THE SAME
 (305+29)/(305+29+26)<-accuracy4
 
 #PLOTTING THE VALUES 
