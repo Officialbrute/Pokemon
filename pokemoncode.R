@@ -34,7 +34,7 @@ Fire_Pokemon %>% filter(Secondary_Type=="Fighting")->Fire_Fighting_Pokemon
 range(Fire_Fighting_Pokemon$Attack)
 Fire_Fighting_Pokemon %>% filter(Attack=="160")->My_Fire_Pokemon
 
-#VIEWING ARE THE CHOSEN POKEMON
+#VIEWING THE CHOSEN POKEMON
 rbind(My_grass_pokemon,My_Water_Pokemon,My_Fire_Pokemon)->My_Pokemons
 View(My_Pokemons)
 ----------------------
